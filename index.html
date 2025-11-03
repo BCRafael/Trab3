@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Toy Store</title>
+    <meta name="title" content="Toy Store">
+    <meta name="description" content="Melhor loja de brinquedos originais">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Toy Store" />
+    <meta property="og:description" content="Melhor loja de brinquedos originais." />
+    <meta property="og:image" content="img/inicio-pequeno.webp" />
+</head>
+<body class="suse-mono">
+    <header>
+        <h1 class="mouse-memoirs-regular">Toy Store</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#patrocinio">Patrocínio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Início  da página</h2>
+            <p>Bem vindo a melhor página de brinquedos <b>Originais</b></p>
+            <picture>
+                <source srcset="img/inicio-medio.webp" media="(min-width:800px)">
+                <source srcset="img/inicio-pequeno.webp" media="(min-width:400px)">
+                <img src="img/inicio-grande.webp" alt="" class="prod" width="90%" height="90%">
+            </picture>
+            <p>Nossa coleção é muito vasta!!!</p>
+            <figure>
+                <img src="img/image2.webp" alt="prod1" class="figs">
+                <figcaption>Brinquedos como esses</figcaption>
+            </figure>
+            <figure>
+                <img src="img/image3.webp" alt="prod2" class="figs">
+                <figcaption>E até esses</figcaption>
+            </figure>
+            <a href="#inicio" class="voltar">Voltar ao início</a>
+        </section>
+        <section id="catalogo">
+            <h2>Catálogo de produtos</h2>
+            <p>Aqui você encontrará os melhores produtos <b>originais</b> da loja</p>
+            <div class="container">
+                <figure>
+                    <img src="img/card1.webp" alt="card1" class="card">
+                    <figcaption>R$ 300,00</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/card2.webp" alt="card2" class="card">
+                    <figcaption>R$ 0,99</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/card3.webp" alt="card3" class="card">
+                    <figcaption>R$ 8.000,00</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/card4.webp" alt="card4" class="card">
+                    <figcaption>R$ 40,00</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/card5.webp" alt="card5" class="card">
+                    <figcaption>R$ 199,99</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/card6.webp" alt="card6" class="card">
+                    <figcaption>R$ <s>149,99</s> 149,98</figcaption>
+                </figure>
+            </div>
+            <br>
+            <a href="#inicio" class="voltar">Voltar ao início</a>
+        </section>
+        <section id="patrocinio">
+            <form class="formularioLabel">
+                <fieldset>
+                    <legend>Potenciais patrocinadores, enviem seu formulário para compor essa linda equipe!</legend><br>
+
+                    <label for="n1">Nome:</label>
+                    <input type="text" id="n1">
+                    <br>
+
+                    <label for="e1">Email:</label>
+                    <input type="email" id="e1">
+                    <br>
+
+                    <label for="s1">Senha:</label>
+                    <input type="password" id="s1">
+                    <br>
+                    
+                    <label for="d1">Data de Nascimento:</label>
+                    <input type="date" id="d1">
+                    <br>
+
+                    <label for="c1">CNPJ:</label>
+                    <input type="text" id="c1" name="cnpj" title="Preencha o CNPJ" pattern="[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}/?[0-9]{4}-?[0-9]{2}">
+                    <br>
+
+                    <input type="radio" name="time" value="Gre" id="gre1">
+                    <label for="gre1">Grêmio</label>
+                    <input type="radio" name="time" value="Int1">
+                    <label for="int1">Inter</label>
+                    <br>
+
+                    <input type="submit" value="enviar"><br>
+                </fieldset>
+            </form>
+
+            <figure>
+                <img src="img/formulario.webp" alt="Imagem de formulario" class="formImage">
+            </figure>
+            <br>
+            <a href="#inicio" class="voltar">Voltar ao início</a>
+        </section>
+        <section id="sobre">
+            <h2>Nós somos uma empresa de brinquedos, olha esse painel</h2>
+            <div class="painelDiv">
+                <div class="painelImg" id="pi1"></div>
+                <div class="painelImg" id="pi2"></div>
+                <div class="painelImg" id="pi3"></div>
+                <div class="painelImg" id="pi4"></div>
+                <div class="painelImg" id="pi5"></div>
+                <div class="painelImg" id="pi6"></div>
+            </div>
+            <br>
+            <a href="#inicio" class="voltar">Voltar ao início</a>
+        </section>
+    </main>
+    <footer id="contato">
+        <h2>Contato</h2>
+        <div class="redesSociais">
+            <img src="img/instagram.webp" alt="instagram" class="instagram" width="10%" height="10%">
+            <b>@Toy.Store</b>
+            <br>
+            <img src="img/tiktok.webp" alt="tiktok" class="tiktok" width="10%" height="10%">
+            <b>Toy Store</b>
+        </div>
+        <p><b>Endereço:</b> Rua: Engenheiro Alfredo Huch, 475 | Bairro: Centro | CEP: 96201-460<br></p>
+        <p>Vínculado ao IFRS <i>Campus</i> Rio Grande</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
