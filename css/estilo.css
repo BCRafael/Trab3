@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Rock+Salt&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+section {min-height: 100vh;}
+
+body.suse-mono {
+  font-family: "SUSE Mono", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1px;
+    background-color: #ff4141;
+}
+
+h1.mouse-memoirs-regular {
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: purple;
+}
+
+section {
+    padding: 10px;
+    text-align: center;
+    scroll-margin-top: 100px;
+}
+
+.prod {
+    border: 3px solid red;
+    width: 90vw;
+    height: 90vw;
+}
+
+.figs {
+    border: 3px solid red;
+    width: 40vw;
+    height: 40vw;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.card {
+    border: 1px solid black;
+    width: 20vw;
+    height: auto;
+    min-height: 15vw;
+    aspect-ratio: 4/3;
+    position: relative;
+    z-index: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#patrocinio {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+#patrocinio figure {
+  margin: 0;
+  width: 100%;
+  justify-self: end;
+}
+
+#patrocinio .formImage {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #patrocinio {
+    grid-template-columns: 1fr;
+  }
+
+  #patrocinio figure {
+    justify-self: center;
+  }
+
+  #patrocinio .formImage {
+    max-width: 90vw;
+  }
+}
+
+.painelDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 200px);
+  gap: 6px;
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto 10px;
+  min-height: 50vh;
+  box-sizing: border-box;
+}
+
+.painelImg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pi1 { grid-area: 1 / 1 / 3 / 2; background-image: url("../img/painel1.webp"); }
+#pi2 { grid-area: 1 / 2 / 2 / 3; background-image: url("../img/painel2.webp"); }
+#pi3 { grid-area: 1 / 3 / 3 / 4; background-image: url("../img/painel3.webp"); }
+#pi4 { grid-area: 2 / 2 / 3 / 3; background-image: url("../img/painel4.webp"); }
+#pi5 { grid-area: 3 / 1 / 4 / 2; background-image: url("../img/painel5.webp"); }
+#pi6 { grid-area: 3 / 2 / 4 / 4; background-image: url("../img/painel6.webp"); }
+
+footer {
+    text-align: center;
+}
+
+.voltar {
+    color: purple;
+    text-decoration: none;
+}
