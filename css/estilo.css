@@ -144,6 +144,11 @@ footer {
     text-align: center;
 }
 
+.redesSociais img {
+    width: 10vh;
+    height: 10vh;
+}
+
 .voltar {
     color: purple;
     text-decoration: none;
