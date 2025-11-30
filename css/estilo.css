@@ -104,7 +104,7 @@ div.container {
 }
 
 @media (max-width: 768px) {
-  #patrocinio {
+  .containerForm {
     grid-template-columns: 1fr;
   }
 
@@ -112,7 +112,7 @@ div.container {
     justify-self: center;
   }
 
-  #patrocinio .formImage {
+  .formImage {
     max-width: 90vw;
   }
 }
