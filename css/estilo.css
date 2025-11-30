@@ -142,6 +142,26 @@ div.container {
 #pi5 { grid-area: 3 / 1 / 4 / 2; background-image: url("../img/painel5.webp"); }
 #pi6 { grid-area: 3 / 2 / 4 / 4; background-image: url("../img/painel6.webp"); }
 
+#carrossel img {
+  object-fit: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+#carse1 {
+  background-image: url("../img/painel1.webp");
+}
+#carse2 {
+  background-image: url("../img/painel2.webp");
+}
+#carse3 {
+  background-image: url("../img/painel3.webp");
+}
+
 footer {
     text-align: center;
 }
