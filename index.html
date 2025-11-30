@@ -68,55 +68,152 @@
             <a href="#inicio" class="voltar">Voltar ao início</a>
         </section>
         <section id="catalogo">
-            <h2>Catálogo de produtos</h2>
-            <p>Aqui você encontrará os melhores produtos <b>originais</b> da loja</p>
-            <div class="container">
-                <figure>
-                    <img src="img/card1-80.webp"
-                    srcset="img/card1-80.webp 80w, img/card1-160.webp 160w, img/card1-320.webp 320w"
-                    sizes="(max-width:600px) 40vw, 160px"
-                    alt="card1" class="card" width="160" height="120">
-                    <figcaption>R$ 300,00</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/card2-60.webp"
-                    srcset="img/card2-60.webp 60w, img/card2-160.webp 160w, img/card2-320.webp 320w"
-                    sizes="(max-width:600px) 40vw, 160px"
-                    alt="card2" class="card" width="160" height="120">
-                    <figcaption>R$ 0,99</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/card3-80.webp"
-                    srcset="img/card3-80.webp 80w, img/card3-160.webp 160w, img/card3-320.webp 320w"
-                    sizes="(max-width:600px) 40vw, 160px"
-                    alt="card3" class="card" width="160" height="120">
-                    <figcaption>R$ 8.000,00</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/card4-50.webp"
-                    srcset="img/card4-50.webp 50w, img/card4-160.webp 160w, img/card4-320.webp 320w"
-                    sizes="(max-width:600px) 40vw, 160px"
-                    alt="card4" class="card" width="160" height="120">
-                    <figcaption>R$ 40,00</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/card5-80.webp"
-                    srcset="img/card5-80.webp 80w, img/card5-160.webp 160w, img/card5-320.webp 320w"
-                    sizes="(max-width:600px) 40vw, 160px"
-                    alt="card5" class="card" width="160" height="120">
-                    <figcaption>R$ 199,99</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/card6-60.webp"
-                    srcset="img/card6-60.webp 60w, img/card6-160.webp 160w, img/card6-320.webp 320w"
-                    sizes="(max-width:600px) 40vw, 160px"
-                    alt="card6" class="card" width="160" height="120">
-                    <figcaption>R$ <s>149,99</s> 149,98</figcaption>
-                </figure>
-            </div>
-            <br>
-            <a href="#inicio" class="voltar">Voltar ao início</a>
-        </section>
+  <h2>Catálogo de produtos</h2>
+  <p>Aqui você encontrará os melhores produtos <b>originais</b> da loja</p>
+  <div class="container">
+    <figure>
+      <img src="img/card1-160.webp"
+           alt="card1"
+           class="card"
+           width="160" height="120"
+           data-bs-toggle="modal" data-bs-target="#modalCard1">
+      <figcaption>R$ 300,00</figcaption>
+    </figure>
+    <figure>
+      <img src="img/card2-160.webp"
+           alt="card2"
+           class="card"
+           width="160" height="120"
+           data-bs-toggle="modal" data-bs-target="#modalCard2">
+      <figcaption>R$ 0,99</figcaption>
+    </figure>
+    <figure>
+      <img src="img/card3-160.webp"
+           alt="card3"
+           class="card"
+           width="160" height="120"
+           data-bs-toggle="modal" data-bs-target="#modalCard3">
+      <figcaption>R$ 8.000,00</figcaption>
+    </figure>
+    <figure>
+      <img src="img/card4-160.webp"
+           alt="card4"
+           class="card"
+           width="160" height="120"
+           data-bs-toggle="modal" data-bs-target="#modalCard4">
+      <figcaption>R$ 40,00</figcaption>
+    </figure>
+    <figure>
+      <img src="img/card5-160.webp"
+           alt="card5"
+           class="card"
+           width="160" height="120"
+           data-bs-toggle="modal" data-bs-target="#modalCard5">
+      <figcaption>R$ 199,99</figcaption>
+    </figure>
+    <figure>
+      <img src="img/card6-160.webp"
+           alt="card6"
+           class="card"
+           width="160" height="120"
+           data-bs-toggle="modal" data-bs-target="#modalCard6">
+      <figcaption>R$ <s>149,99</s> 149,98</figcaption>
+    </figure>
+  </div>
+  <br>
+  <a href="#inicio" class="voltar">Voltar ao início</a>
+</section>
+
+<!-- Modais -->
+<div class="modal fade" id="modalCard1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produto 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/card1-320.webp" class="img-fluid" alt="card1 ampliado">
+        <p>Preço: R$ 300,00<br>Descrição detalhada do produto 1.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produto 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/card2-320.webp" class="img-fluid" alt="card2 ampliado">
+        <p>Preço: R$ 0,99<br>Descrição detalhada do produto 2.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produto 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/card3-320.webp" class="img-fluid" alt="card3 ampliado">
+        <p>Preço: R$ 8.000,00<br>Descrição detalhada do produto 3.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produto 4</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/card4-320.webp" class="img-fluid" alt="card4 ampliado">
+        <p>Preço: R$ 40,00<br>Descrição detalhada do produto 4.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produto 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/card5-320.webp" class="img-fluid" alt="card5 ampliado">
+        <p>Preço: R$ 199,99<br>Descrição detalhada do produto 5.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCard6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Produto 6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/card6-320.webp" class="img-fluid" alt="card6 ampliado">
+        <p>Preço: R$ 149,98<br>Descrição detalhada do produto 6.</p>
+      </div>
+    </div>
+  </div>
+</div>
         <section id="patrocinio">
             <h2>Patrocinios</h2>
             <div class="containerForm">
@@ -197,11 +294,11 @@
             </div>
             </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
