@@ -81,25 +81,26 @@ div.container {
     justify-content: flex-start;
 }
 
-#patrocinio {
+.containerForm {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
   gap: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
-#patrocinio figure {
-  margin: 0;
-  width: 100%;
-  justify-self: end;
+.formularioLabel {
+  justify-content: start;
 }
 
-#patrocinio .formImage {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+.formImage {
+  width: 30%;
+  max-width: 30%;
   height: auto;
-  object-fit: cover;
+  margin: 0;
+  width: 30%;
+  justify-self: end;
 }
 
 @media (max-width: 768px) {
