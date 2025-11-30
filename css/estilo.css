@@ -150,10 +150,8 @@ div.container {
   background-position: center;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 50%;
+.carousel-text {
+  color: black;
 }
 
 #carse1 {
