@@ -44,10 +44,20 @@
             <h2>Início  da página</h2>
             <p>Bem vindo a melhor página de brinquedos <b>Originais</b></p>
         <picture>
-                <source srcset="img/inicio-grande.webp" media="(min-width:1201px)">
-                <source srcset="img/inicio-medio.webp" media="(min-width:601px)">
-                <source srcset="img/inicio-pequeno.webp" media="(max-width:600px)">
-                <img src="img/inicio-pequeno.webp" alt="principal" class="prod" width="225" height="225" fetchpriority="high">
+                <img 
+  src="img/inicio-pequeno.webp"
+  srcset="
+    img/inicio-pequeno.webp 400w,
+    img/inicio-medio.webp 800w,
+    img/inicio-grande.webp 1200w
+  "
+  sizes="(max-width: 600px) 100vw, 50vw"
+  alt="principal"
+  class="prod"
+  width="1200"
+  height="600"
+  fetchpriority="high"
+>
         </picture>
             <p>Nossa coleção é muito vasta!!!</p>
             <figure>
