@@ -152,6 +152,10 @@ div.container {
 
 .carousel-text {
   color: black;
+  border: 2px solid black;
+  padding: 8px;
+  width: fit-content;
+  background-color: white;
 }
 
 #carse1 {
